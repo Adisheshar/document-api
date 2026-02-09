@@ -67,8 +67,6 @@ def process_document_background(document_id: int):
         db.close()
 
 
-from fastapi import BackgroundTasks
-
 @router.post("/{document_id}/process", status_code=202)
 def process_document(
     document_id: int,
